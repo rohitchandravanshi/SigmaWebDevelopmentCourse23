@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            font-size: 18px;
+        }
+        .box{
+            border: 2px solid rgb(17, 1, 1);
+            /* width: 1525px; */
+            width: 80vw;
+            height: 10vh;
+            background-color: aquamarine;
+            margin: auto;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 1525px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            background-color: aquamarine;
+            margin: 23px auto;
+            font-size: 18px;
+        }
+        .container > div {
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        
+        }
+        .container > div > div{
+            font-size: 0.5em;
+            border: 2px solid blue;
+            width: 50%;
+        
+        }
+    
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            color: yellow;
+            margin: 23px auto;
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This a box
+    </div>
+    <div class="container">
+<div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus non sunt vero sit blanditiis consequuntur odit enim iste expedita numquam magnam corrupti qui temporibus eos officia modi nulla quam voluptate saepe, ea neque minus. Maiores non eum repudiandae at consequuntur deleniti dolor, et libero dolorem laborum aliquid eaque, qui alias!
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum odio ea perferendis veniam ut vero natus repudiandae temporibus? Quas, necessitatibus!
+        </div>
+</div>
+    </div>
+    <div class="mycont">
+        <p>I am another container</p>
+    </div>
+</body>
+</html>
