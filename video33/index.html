@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Vsriables</title>
+    <style>
+      :root {
+        --color: rgb(22, 199, 205);
+        --seccolor: rgb(241, 241, 134);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        /* background-color: rgb(109, 238, 109); */
+        background-color: var(--color);
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        padding: 5px;
+      }
+      ul li:first-child {
+        --color: green;
+        background-color: var(--color);
+      }
+      .container {
+        background-color: rgb(181, 237, 181);
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contect</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+      consequatur, voluptas rerum facilis in suscipit temporibus nulla at quasi
+      nihil magni ab non.
+    </div>
+  </body>
+</html>

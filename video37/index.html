@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .body {
+        height: 120vh;
+        width: 100vw;
+        background-color: rgb(55, 67, 67);
+        /* position: absolute; */
+      }
+      nav {
+        height: 50px;
+        width: 100vw;
+        background-color: rgb(147, 244, 241);
+        position: fixed;
+        top: 0px;
+      }
+      .main {
+        height: 500px;
+        background-color: rgb(190, 179, 168);
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin: 40px;
+      }
+      .box {
+        height: 400px;
+        width: 400px;
+        margin: 50px;
+        background-color: rgb(230, 163, 199);
+      }
+      .button {
+        padding: 28px;
+        height: 60px;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 20px;
+        font-size: 40px;
+        background-color: rgb(180, 141, 216);
+      }
+      footer {
+        background-color: rgb(193, 178, 168);
+        width: 100vw;
+        height: 50px;
+        margin-top: 14vh;
+      }
+      .logo {
+        position: fixed;
+        top: 90vh;
+        left: 90vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <nav>Hey I am a nav bar</nav>
+      <div class="main">
+        <div class="box">I am div 1</div>
+        <div class="box">I am div 2</div>
+      </div>
+      <div class="button">Welcome to this Sigma Web development course</div>
+      <footer>I am footer</footer>
+      <div class="logo">
+        <img width="50px" height="55px" src="logo.png" alt="logo" />
+      </div>
+    </div>
+  </body>
+</html>
