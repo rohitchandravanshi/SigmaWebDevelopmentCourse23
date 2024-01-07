@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
+        .box{
+            height: 45px;
+            width: 45px;
+            border: 2px solid black;
+        
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Given five boxes, Assign a random color and a random backgroung to each box using DOM concepts -->
+    
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+
+    
+
+    <script>
+        let rand = Math.random();
+    if (rand < 1) {
+        bcolor = "yellow";
+    } 
+    else if (rand < 0.66 && rand >= 0.33) {
+        bcolor = "pink";
+    } 
+    else {
+        bcolor = "blue";
+    }
+
+    console.log(`${bcolor}`)
+
+            document.body.style.color = "bcolor";
+            document.body.style.backgroundColor = " bcolor";
+    </script>
+</body>
+</html>
